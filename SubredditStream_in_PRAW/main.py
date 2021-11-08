@@ -18,19 +18,23 @@ def authenticate():
 
 reddit = authenticate()
 
-print(authenticate().read_only)
+print(reddit.read_only)
 '''
 for comment in authenticate().subreddit("iama").stream.comments():
     # print(comment)
     pass
-
-subreddit = reddit.subreddit("iama")
-for comment in subreddit.stream.comments(skip_existing=True):
-    # print(comment)
-    pass
 '''
 
+subreddit = reddit.subreddit("programmerhumor")
+for comment in subreddit.stream.comments(skip_existing=True):
+    # print(comment)
+    # print(comment.author)
+    print("\n"+comment.body)
+    # pass
+
+'''
 for submission in reddit.subreddit("memes").stream.submissions():
     # print(submission)
     print("\n"+submission.title)
 
+'''

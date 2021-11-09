@@ -5,13 +5,20 @@
        > [Subreddit](https://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html), [SubredditStream](https://praw.readthedocs.io/en/stable/code_overview/other/subredditstream.html)
        - `SubredditStream` idea got from [fterh/sneakpeek](https://github.com/fterh/sneakpeek/blob/master/main.py)
 
+- [x] 2. **9th Nov**
+  - Bash Scripting for Beginners
+    > [Bash Scripting Tutorial](https://linuxconfig.org/bash-scripting-tutorial)
+    - _Have to start from Arithmetic Comparisons_
+
+
 <hr>
 <div align="center">
 
 Day      | Score
 :--------------:|:----------------:
 **8th Nov** | **1+0.5**
-***Total***     | ***1.5***
+**9th Nov** | **1**
+***Total***     | ***2.5***
      
 </div>
 <hr>

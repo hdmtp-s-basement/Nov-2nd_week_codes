@@ -10,6 +10,9 @@
     > [Bash Scripting Tutorial](https://linuxconfig.org/bash-scripting-tutorial)
     - _Have to start from Arithmetic Comparisons_
 
+- [x] 3. **10th Nov**
+  - Many things to learn about bash scripting
+    - _not plausible to learn in one day_
 
 <hr>
 <div align="center">
@@ -18,7 +21,8 @@ Day      | Score
 :--------------:|:----------------:
 **8th Nov** | **1+0.5**
 **9th Nov** | **1+0.12**
-***Total***     | ***2.62***
+**10th Nov**| **0.38**
+***Total***     | ***3.00***
      
 </div>
 <hr>

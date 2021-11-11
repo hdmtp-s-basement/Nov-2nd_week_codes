@@ -14,6 +14,12 @@
   - Many things to learn about bash scripting
     - _not plausible to learn in one day_
 
+- [ ] 4. **11th Nov** - ~~_NULL_~~
+- [x] 5. **12th Nov**
+  - PRAW( _Python Reddit API Wrapper_ )
+    > [RedditroStream](https://praw.readthedocs.io/en/stable/code_overview/other/redditorstream.html)
+    - _trying to customize my functions as per my necessity in `RedditStream`_
+
 <hr>
 <div align="center">
 
@@ -22,7 +28,9 @@ Day      | Score
 **8th Nov** | **1+0.5**
 **9th Nov** | **1+0.12**
 **10th Nov**| **0.38**
-***Total***     | ***3.00***
+**11th Nov**| **0**
+**12th Nov**| **1**
+***Total***     | ***4.00***
      
 </div>
 <hr>

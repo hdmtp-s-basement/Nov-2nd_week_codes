@@ -19,6 +19,9 @@
   - PRAW( _Python Reddit API Wrapper_ )
     > [RedditroStream](https://praw.readthedocs.io/en/stable/code_overview/other/redditorstream.html)
     - _trying to customize my functions as per my necessity in `RedditStream`_
+  - Exploring other aspects of _PRAW_ like [SubredditWiki](https://praw.readthedocs.io/en/stable/code_overview/other/subredditwiki.html)
+    - **Need to fix [this](https://github.com/hdmtp-s-basement/Nov-2nd_week_codes/blob/bcf0d6cd8803618196a81aaa1bd72d5be1743bac/RedditorStream_in_PRAW/stream_comment.py#L24) bug**
+
 
 <hr>
 <div align="center">
@@ -29,8 +32,8 @@ Day      | Score
 **9th Nov** | **1+0.12**
 **10th Nov**| **0.38**
 **11th Nov**| **0**
-**12th Nov**| **1**
-***Total***     | ***4.00***
+**12th Nov**| **1+1**
+***Total***     | ***5.00***
      
 </div>
 <hr>

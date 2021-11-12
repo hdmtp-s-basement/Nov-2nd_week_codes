@@ -21,21 +21,22 @@ reddit = authenticate()
 
 print(reddit.read_only)
 
-def redditor_stream_comnts(user, duration=30):
-    stime = time.time()
-    etime = 0
-    user = str(user)
-    for comment in reddit.redditor(user).stream.comments():
-        if (etime >= duration):
-            break
-        print(comment.body)
-        print("\n")
-        etime += (int(time.time() - stime))
-    
-# redditor_stream_comnts("CamogapA113")
-redditor_stream_comnts("drdoge64")
 
-'''
-there's a bug in 28-33 line that blunts the purpose
-of that loop by about 80%. It need to be resolved quickly.
-'''
+def sub_wiki(sub):
+    topics = []
+    for item in reddit.subreddit(sub).wiki:
+        item = str(item)
+        topic = (item[len(sub)+1:])
+        print(topic)
+        topics.append(topic)
+
+    def sub_wiki_detail():
+        for i in range(len(topics)):
+            print(reddit.subreddit(sub).wiki[topics[i]].content_md)
+            print("\n")
+    sub_wiki_detail()
+
+
+sub_wiki("programmerhumor")
+
+

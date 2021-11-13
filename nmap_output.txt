@@ -1,0 +1,178 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2021-11-13 20:05 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:05
+Completed NSE at 20:05, 0.00s elapsed
+Initiating NSE at 20:05
+Completed NSE at 20:05, 0.00s elapsed
+Initiating NSE at 20:05
+Completed NSE at 20:05, 0.00s elapsed
+Initiating Ping Scan at 20:05
+Scanning askubuntu.com (151.101.1.69) [2 ports]
+Completed Ping Scan at 20:05, 0.13s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:05
+Completed Parallel DNS resolution of 1 host. at 20:05, 0.10s elapsed
+Initiating Connect Scan at 20:05
+Scanning askubuntu.com (151.101.1.69) [1000 ports]
+Discovered open port 443/tcp on 151.101.1.69
+Discovered open port 53/tcp on 151.101.1.69
+Discovered open port 80/tcp on 151.101.1.69
+Completed Connect Scan at 20:05, 11.00s elapsed (1000 total ports)
+Initiating Service scan at 20:05
+Scanning 3 services on askubuntu.com (151.101.1.69)
+Completed Service scan at 20:05, 19.59s elapsed (3 services on 1 host)
+NSE: Script scanning 151.101.1.69.
+Initiating NSE at 20:05
+Completed NSE at 20:06, 13.80s elapsed
+Initiating NSE at 20:06
+Completed NSE at 20:06, 1.40s elapsed
+Initiating NSE at 20:06
+Completed NSE at 20:06, 0.00s elapsed
+Nmap scan report for askubuntu.com (151.101.1.69)
+Host is up (0.068s latency).
+Other addresses for askubuntu.com (not scanned): 151.101.193.69 151.101.129.69 151.101.65.69
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+53/tcp  open  domain     (unknown banner: unknown)
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|     bind
+|_    unknown
+| dns-nsid: 
+|_  bind.version: unknown
+80/tcp  open  http-proxy Varnish
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Did not follow redirect to https://askubuntu.com/
+443/tcp open  ssl/https  Varnish
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Ask Ubuntu
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=*.stackexchange.com
+| Subject Alternative Name: DNS:*.askubuntu.com, DNS:*.blogoverflow.com, DNS:*.mathoverflow.net, DNS:*.meta.stackexchange.com, DNS:*.meta.stackoverflow.com, DNS:*.serverfault.com, DNS:*.sstatic.net, DNS:*.stackexchange.com, DNS:*.stackoverflow.com, DNS:*.stackoverflow.email, DNS:*.superuser.com, DNS:askubuntu.com, DNS:blogoverflow.com, DNS:mathoverflow.net, DNS:openid.stackauth.com, DNS:serverfault.com, DNS:sstatic.net, DNS:stackapps.com, DNS:stackauth.com, DNS:stackexchange.com, DNS:stackoverflow.blog, DNS:stackoverflow.com, DNS:stackoverflow.email, DNS:stacksnippets.net, DNS:superuser.com
+| Issuer: commonName=R3/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-11-04T13:16:31
+| Not valid after:  2022-02-02T13:16:30
+| MD5:   6515 56a3 2f21 86ea d2c4 3d88 95e1 6888
+|_SHA-1: 0a1a a6a4 c956 ce7c 07f9 740b c41c e6f9 d80e 2c3f
+| tls-alpn: 
+|   h2
+|   http/1.1
+|_  http/1.0
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 220
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-bom4720-BOM
+|     Accept-Ranges: bytes
+|     Date: Sat, 13 Nov 2021 14:35:50 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-bom4720-BOM</p></body></html>
+|   GetRequest: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 220
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-bom4747-BOM
+|     Accept-Ranges: bytes
+|     Date: Sat, 13 Nov 2021 14:35:49 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|     <p>Details: cache-bom4747-BOM</p></body></html>
+|   HTTPOptions: 
+|     HTTP/1.1 500 Domain Not Found
+|     Connection: close
+|     Content-Length: 220
+|     Server: Varnish
+|     Retry-After: 0
+|     content-type: text/html
+|     Cache-Control: private, no-cache
+|     X-Served-By: cache-bom4729-BOM
+|     Accept-Ranges: bytes
+|     Date: Sat, 13 Nov 2021 14:35:49 GMT
+|     Via: 1.1 varnish
+|     <html>
+|     <head>
+|     <title>Fastly error: unknown domain </title>
+|     </head>
+|     <body>
+|     <p>Fastly error: unknown domain: . Please check that this domain has been added to a service.</p>
+|_    <p>Details: cache-bom4729-BOM</p></body></html>
+|_http-server-header: Varnish
+| http-robots.txt: 68 disallowed entries (15 shown)
+| /posts/ /posts? /amzn/click/ /questions/ask/ 
+| /questions/ask? /search/ /search? /feeds/ /feeds? /users/login/ 
+| /users/login? /users/logout/ /users/logout? /users/filter/ 
+|_/users/filter?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.92%I=7%D=11/13%Time=618FCD3B%P=x86_64-pc-linux-gnu%r(DNS
+SF:VersionBindReqTCP,42,"\0@\0\x06\x85\0\0\x01\0\x01\0\x01\0\0\x07version\
+SF:x04bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\x08\x07unknown\xc0\
+SF:x0c\0\x02\0\x03\0\0\0\0\0\x02\xc0\x0c");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.92%T=SSL%I=7%D=11/13%Time=618FCD3D%P=x86_64-pc-linux-gn
+SF:u%r(GetRequest,1EE,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\nConne
+SF:ction:\x20close\r\nContent-Length:\x20220\r\nServer:\x20Varnish\r\nRetr
+SF:y-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20privat
+SF:e,\x20no-cache\r\nX-Served-By:\x20cache-bom4747-BOM\r\nAccept-Ranges:\x
+SF:20bytes\r\nDate:\x20Sat,\x2013\x20Nov\x202021\x2014:35:49\x20GMT\r\nVia
+SF::\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>Fastly\x20error:\x
+SF:20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>Fastly\x20error:\x
+SF:20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20domain
+SF:\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\n<p>Details:\x20ca
+SF:che-bom4747-BOM</p></body></html>")%r(HTTPOptions,1EE,"HTTP/1\.1\x20500
+SF:\x20Domain\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Length:\x
+SF:20220\r\nServer:\x20Varnish\r\nRetry-After:\x200\r\ncontent-type:\x20te
+SF:xt/html\r\nCache-Control:\x20private,\x20no-cache\r\nX-Served-By:\x20ca
+SF:che-bom4729-BOM\r\nAccept-Ranges:\x20bytes\r\nDate:\x20Sat,\x2013\x20No
+SF:v\x202021\x2014:35:49\x20GMT\r\nVia:\x201\.1\x20varnish\r\n\r\n\n<html>
+SF:\n<head>\n<title>Fastly\x20error:\x20unknown\x20domain\x20</title>\n</h
+SF:ead>\n<body>\n<p>Fastly\x20error:\x20unknown\x20domain:\x20\.\x20Please
+SF:\x20check\x20that\x20this\x20domain\x20has\x20been\x20added\x20to\x20a\
+SF:x20service\.</p>\n<p>Details:\x20cache-bom4729-BOM</p></body></html>")%
+SF:r(FourOhFourRequest,1EE,"HTTP/1\.1\x20500\x20Domain\x20Not\x20Found\r\n
+SF:Connection:\x20close\r\nContent-Length:\x20220\r\nServer:\x20Varnish\r\
+SF:nRetry-After:\x200\r\ncontent-type:\x20text/html\r\nCache-Control:\x20p
+SF:rivate,\x20no-cache\r\nX-Served-By:\x20cache-bom4720-BOM\r\nAccept-Rang
+SF:es:\x20bytes\r\nDate:\x20Sat,\x2013\x20Nov\x202021\x2014:35:50\x20GMT\r
+SF:\nVia:\x201\.1\x20varnish\r\n\r\n\n<html>\n<head>\n<title>Fastly\x20err
+SF:or:\x20unknown\x20domain\x20</title>\n</head>\n<body>\n<p>Fastly\x20err
+SF:or:\x20unknown\x20domain:\x20\.\x20Please\x20check\x20that\x20this\x20d
+SF:omain\x20has\x20been\x20added\x20to\x20a\x20service\.</p>\n<p>Details:\
+SF:x20cache-bom4720-BOM</p></body></html>");
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:06
+Completed NSE at 20:06, 0.00s elapsed
+Initiating NSE at 20:06
+Completed NSE at 20:06, 0.00s elapsed
+Initiating NSE at 20:06
+Completed NSE at 20:06, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 46.89 seconds

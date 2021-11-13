@@ -25,8 +25,8 @@ for comment in authenticate().subreddit("iama").stream.comments():
     pass
 '''
 
-subreddit = reddit.subreddit("programmerhumor")
-for comment in subreddit.stream.comments(skip_existing=True):
+subreddit = reddit.subreddit("memes")
+for comment in subreddit.stream.comments(skip_existing=True, pause_after=5):
     # print(comment)
     # print(comment.author)
     print("\n"+comment.body)

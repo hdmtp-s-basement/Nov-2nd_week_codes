@@ -22,25 +22,23 @@ reddit = authenticate()
 print(reddit.read_only)
 
 def redditor_stream_comnts(user, duration=30):
-    stime = time.time()
-    etime = 0
     user = str(user)
     i = 0
     for comment in reddit.redditor(user).stream.comments():
-        if (etime >= duration):
+        if comment is None:
             break
         print(comment.body)
         print("\n")
-        etime += (int(time.time() - stime))
         i += 1
     print(i)
     
-# redditor_stream_comnts("CamogapA113", 50)
-redditor_stream_comnts("drdoge64",15)
+# redditor_stream_comnts("CamogapA113")
+# redditor_stream_comnts("drdoge64")
 
-'''
-there's a bug in 28-33 line that blunts the purpose
-of that loop by about 80%. It need to be resolved quickly.
 
-EDIT: its unavoidable ¯\_(ツ)_/¯
-'''
+
+subreddit = reddit.subreddit("hdmtp645466")
+for comment in subreddit.stream.comments(pause_after=0):
+    if comment is None:
+        continue
+    print(comment.body)

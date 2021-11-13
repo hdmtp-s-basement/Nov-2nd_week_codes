@@ -1,3 +1,4 @@
+import sys
 import praw
 import os
 from os.path import join, dirname
@@ -21,26 +22,10 @@ reddit = authenticate()
 
 print(reddit.read_only)
 
-def redditor_stream_comnts(user, duration=30):
-    stime = time.time()
-    etime = 0
+def redditor_stream_comnts(user):
     user = str(user)
-    i = 0
     for comment in reddit.redditor(user).stream.comments():
-        if (etime >= duration):
-            break
         print(comment.body)
         print("\n")
-        etime += (int(time.time() - stime))
-        i += 1
-    print(i)
     
-redditor_stream_comnts("CamogapA113", 50)
-# redditor_stream_comnts("drdoge64")
 
-'''
-there's a bug in 28-33 line that blunts the purpose
-of that loop by about 80%. It need to be resolved quickly.
-
-EDIT: its unavoidable ¯\_(ツ)_/¯
-'''

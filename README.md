@@ -20,7 +20,7 @@
     > [RedditroStream](https://praw.readthedocs.io/en/stable/code_overview/other/redditorstream.html)
     - _trying to customize my functions as per my necessity in `RedditStream`_
   - Exploring other aspects of _PRAW_ like [SubredditWiki](https://praw.readthedocs.io/en/stable/code_overview/other/subredditwiki.html)
-    - **Need to fix [this](https://github.com/hdmtp-s-basement/Nov-2nd_week_codes/blob/bcf0d6cd8803618196a81aaa1bd72d5be1743bac/RedditorStream_in_PRAW/stream_comment.py#L24) bug**
+    - **Need to fix [this](https://github.com/hdmtp-s-basement/Nov-2nd_week_codes/blob/bcf0d6cd8803618196a81aaa1bd72d5be1743bac/RedditorStream_in_PRAW/stream_comment.py#L24) bug** => ***EDITED ON 13TH Nov 14:45 : [THE ISSUE RELATED TO THE BUG HAS BEEN RESOLVED.](https://praw.readthedocs.io/en/stable/code_overview/other/util.html)***
 
 - [x] 6. **13th Nov**
   - PRAW( _Python Reddit API Wrapper_ )
@@ -44,8 +44,8 @@ Day      | Score
 **10th Nov**| **0.38**
 **11th Nov**| **0**
 **12th Nov**| **1+1**
-**13th Nov**| **1**
-***Total***     | ***6.00***
+**13th Nov**| **1+0.5**
+***Total***     | ***6.50***
      
 </div>
 <hr>

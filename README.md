@@ -31,6 +31,13 @@
     - [reddit.inbox.stream](https://github.com/Toldry/RedditAutoCrosspostBot/blob/d194c70d7d1cbc31f34d4141fb7d06d058e35d20/reddit_auto_crosspost_bot.py#L57)
     - [praw.models.util.streamgenerator1](https://github.com/msr8/sussy-bot/blob/13ee3dd2b578edc9676308aa153c27dba503b0ac/main.py#L25)
     - [praw.models.util.streamgenerator2](https://github.com/msr8/sussy-bot/blob/13ee3dd2b578edc9676308aa153c27dba503b0ac/reply-bot/main.py#L27)
+
+  - **nmap**
+    > To store output(`stdout`) of a command in a file [learn here](https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file)
+
+  - Bash Scripting cheatsheet
+    > learning `shell scripting` from the beggining
+    - [OP CheatSheet](https://devhints.io/bash)
     
 
 
@@ -44,8 +51,8 @@ Day      | Score
 **10th Nov**| **0.38**
 **11th Nov**| **0**
 **12th Nov**| **1+1**
-**13th Nov**| **1+0.5**
-***Total***     | ***6.50***
+**13th Nov**| **1+0.5+0.5+1**
+***Total***     | ***8.0***
      
 </div>
 <hr>

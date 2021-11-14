@@ -38,6 +38,8 @@
   - Bash Scripting cheatsheet
     > learning `shell scripting` from the beggining
     - [OP CheatSheet](https://devhints.io/bash)
+
+- [ ] 7. **14th Nov** - ~~_NULL_~~
     
 
 
@@ -52,6 +54,7 @@ Day      | Score
 **11th Nov**| **0**
 **12th Nov**| **1+1**
 **13th Nov**| **1+0.5+0.5+1**
+**14th Nov**| **0**
 ***Total***     | ***8.0***
      
 </div>
